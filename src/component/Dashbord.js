@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import DataTable from "react-data-table-component";
-import ProductStatsSummary from './PieChart'; // Import ProductStatsSummary component
-import BarChart from './MonthlySalesBarChart';
+import ProductStatsSummary from './PieChart'; 
 
 
 const Dashboard = () => {
   const [records, setRecords] = useState([]);
   const [filteredRecords, setFilteredRecords] = useState([]);
-  const [selectedMonth, setSelectedMonth] = useState(''); // State to store selected month
-  const [chartData, setChartData] = useState({});
+  const [selectedMonth, setSelectedMonth] = useState(''); 
 
   useEffect(() => {
     const fetchData = async () => {
