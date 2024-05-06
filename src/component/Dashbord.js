@@ -14,7 +14,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get("http://localhost:5000/");
+        const result = await axios.get("https://roxiler-backend-0hok.onrender.com/");
         setRecords(result.data);
         setFilteredRecords(result.data); // Initialize filteredRecords with all records
       } catch (error) {
